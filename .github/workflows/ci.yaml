@@ -30,7 +30,7 @@ jobs:
           CITY: ${{ secrets.CITY }}
         run: node fetchWeather.js
       - name: Run tests
-        run: npm tests
+        run: npm test
       - name: Commit weather data if changed
         run: |
           git config user.name "github-actions[bot]"
